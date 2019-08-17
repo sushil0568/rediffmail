@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+<body>
+<script>
+ class Pet {
+        constructor(name, weight, price) {
+            this.name = name;
+            this.weight = weight;
+            this.price = price;
+        }
+
+        getInfo() {
+            return "Hi, my name is " + this.name + ". I weigh " + this.weight + " pounds and cost $" + this.price + ".";
+        }
+    }
+    var pet = new Pet("Fluffy", 20, 200);
+    console.log(pet);
+    console.log(pet.getInfo());
+
+</script>
+
+</body>   
+</html>

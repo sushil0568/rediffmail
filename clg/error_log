@@ -1,0 +1,5 @@
+[04-Oct-2016 16:39:23] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/igitco/login.igit.co.in/application/models/Student_model.php on line 38
+[04-Oct-2016 16:39:29] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/igitco/login.igit.co.in/application/models/Student_model.php on line 38
+[04-Oct-2016 16:39:30] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/igitco/login.igit.co.in/application/models/Student_model.php on line 38
+[12-Oct-2016 20:07:02] PHP Fatal error:  Call to undefined function error_reportig() in /home/igitco/login.igit.co.in/application/views/student_edit_profile.php on line 2
+[16-Oct-2016 20:03:38] PHP Fatal error:  Call to undefined method Student_Model::update_student_img() in /home/igitco/login.igit.co.in/application/controllers/Student.php on line 55

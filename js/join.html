@@ -1,0 +1,119 @@
+<html>
+<head></head>
+<body>
+<script>
+    //join
+    var a = [11,9,1]
+    var x = a.join('*');
+    console.log(x);
+       
+    // shift
+    var b = [11,9,10];
+    b.shift();
+    console.log(b);
+        
+    // unshift add new element into the array
+    var c = [10,9,8];
+    c.unshift(c,21);
+    console.log(c);
+    
+    // push
+    var d = [10,44,25,46];
+    d.push(d,51);
+    console.log(d);
+    
+    //splise method : add/remove element from any index
+    //remove element
+    var e = [1,2,3,4,5];
+    e.splice(2,1);
+    console.log(e);
+    
+    //add element
+    var f = [1,2,3,4,5];
+    f.splice(2,0,51,101);
+    console.log(f);
+    
+    //concat : marge array
+    var g = [1,2];
+    var h = [3,4];
+    var ss = [5,6]
+    var i = g.concat(h,ss);
+    console.log(i);
+    
+    //sclice : remove index from right    
+    var j = ['a','b','c','d','e','f','g'];    
+    var k = j.slice(2,4);
+    console.log(k);
+    
+    //array map
+    var x = [1,2,3];
+    var y = x.map(function(x){
+        return x*2;
+    })
+    console.log(y);
+    
+    var emps = [
+        {"name":"skm","age":25,"salary":"1000"},
+        {"name":"skm","age":25,"salary":"2000"},
+        {"name":"skm","age":25,"salary":"3000"},
+    ]
+   var arr =  emps.map(function(x){
+        return x.salary = ((10*x.salary)/100);
+    })
+    
+    console.log(arr);
+    
+   var xxx = [
+                {"name":"sushil","food":"5000","travel":"1000","cloth":"400"},
+                {"name":"skm","food":"1000","travel":"1000","cloth":"400"},
+                {"name":"mks","food":"2000","travel":"3000","cloth":"400"}
+              ]
+              
+    var arr1 = xxx.map(function(x){
+            return total = (parseInt(x.food)+parseInt(x.cloth)+parseInt(x.travel));    
+//            return xxx.splice(3,0,$total);
+    })
+    
+    console.log(arr1);
+   //array filter
+   var marks = [76,35,89,90,69,40];
+   
+   var res = marks.filter(function(x){
+                            return x>50         
+   });
+    
+    console.log(res);
+    
+    //find
+     var marks1 = [76,35,89,76,90,69,40];
+   
+   var res1 = marks1.filter(function(x){
+                            return x>76         
+   });
+       console.log(res1);
+    // reduse
+    var sal = [100,200,300];
+    var result = sal.reduce(function(total,value){
+        return total+value;
+    })
+    console.log(result);
+    
+    var age = [50,18,20,30];
+    var resultdata =  age.every(function(x){
+        return  x >18;
+    })
+    console.log(resultdata);
+    //some
+    var age1 = [50,18,20,30];
+    var resultdata1 =  age1.some(function(x){
+        return  x >18;
+    })
+    console.log(resultdata1);
+    //indexOf
+    
+    var sushil = [51,101,21];
+    
+    </script>
+    </body>
+    
+</html>
